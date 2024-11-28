@@ -9,6 +9,6 @@ return [
         'featured-articles-section.articles',
         'article-page.categories',
         'article-page.author',
-        'banner-reference.banners'
-    ]
+        'banner-reference.banners',
+    ],
 ];

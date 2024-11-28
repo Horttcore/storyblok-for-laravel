@@ -2,11 +2,11 @@
 
 namespace RalfHortt\StoryblokForLaravel;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Illuminate\Support\Facades\Blade;
 use RalfHortt\StoryblokForLaravel\Commands\StoryblokForLaravelCommand;
+use Spatie\LaravelPackageTools\Commands\InstallCommand;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class StoryblokServiceProvider extends PackageServiceProvider
 {
@@ -22,16 +22,16 @@ class StoryblokServiceProvider extends PackageServiceProvider
             ->hasConfigFile('storyblok')
             // ->hasViewComponent('bloks', Alert::class)
             // ->hasViewComponent('blok', Alert::class)
-            ->hasInstallCommand(function(InstallCommand $command) {
+            ->hasInstallCommand(function (InstallCommand $command) {
                 $command
                     ->publishConfigFile()
                     ->copyAndRegisterServiceProviderInApp()
                     ->askToStarRepoOnGitHub('Horttcore/storyblok-for-laravel');
             });
-            // ->hasViews()
-            // ->hasMigration('create_storyblok_for_laravel_table')
-            // ->hasCommand(StoryblokForLaravelCommand::class)
-            ;
+        // ->hasViews()
+        // ->hasMigration('create_storyblok_for_laravel_table')
+        // ->hasCommand(StoryblokForLaravelCommand::class)
+
     }
 
     public function bootingPackage()

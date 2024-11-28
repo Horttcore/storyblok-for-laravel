@@ -55,6 +55,7 @@ class Storyblok
     public function all(array $params = []): Collection
     {
         [$stories] = $this->getStories($params);
+
         return collect($stories);
     }
 

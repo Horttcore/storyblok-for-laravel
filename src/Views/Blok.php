@@ -1,10 +1,12 @@
 <?php
+
 namespace RalfHortt\StoryblokForLaravel\Views;
 
 use Illuminate\View\Component;
 use Illuminate\View\View;
 
-class Blok extends Component {
+class Blok extends Component
+{
     public array $blok;
 
     /**
