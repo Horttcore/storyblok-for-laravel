@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace RalfHortt\StoryblokForLaravel\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class StoryblokForLaravelCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'storyblok-for-laravel';
 
     public $description = 'My command';
 
